@@ -1,0 +1,25 @@
+body {
+  /* background-color: #001b44; */
+  background-image: url("img/bg.png");
+  font-family: 'Rajdhani', sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* max-height: 1080px;
+  max-width: 1920px; */
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+p {
+    text-align: center;
+    margin-top: -15px;
+}
+.row {
+    margin-top: -30px;
+}
