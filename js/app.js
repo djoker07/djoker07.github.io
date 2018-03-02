@@ -4,4 +4,6 @@ $(document).ready(function ($) {
       console.log('callback - particles.js config loaded');
     });
 
+    deJS.load();
+
 });

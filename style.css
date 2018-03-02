@@ -1,6 +1,6 @@
 body {
-  /* background-color: #001b44; */
-  background-image: url("img/bg.png");
+  background-color: #001b44;
+  /* background-image: url("img/bg.png"); */
   font-family: 'Rajdhani', sans-serif;
   background-repeat: no-repeat;
   background-size: cover;
