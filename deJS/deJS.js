@@ -1,6 +1,6 @@
 const ALPHA = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
 const TIME = 50;
-var queue = [];
+let queue = [];
 let currentLetter = 0;
 let progress = 0;
 
@@ -8,7 +8,7 @@ window.deJS = {};
 
 window.deJS.load = function() {
     //get elements in the queue
-    $(".decodeEffect").each(function(){
+    $(".decodeEffect").each(function() {
         queue.push(
             {
                 element: $(this).get(0),
@@ -18,20 +18,20 @@ window.deJS.load = function() {
     });
 
     //animate text
-    for (var i = 0; i < queue.length; i++) {
+    for (let i = 0; i < queue.length; i++) {
         animate(queue[i]);
     }
 }
 
 function animate(container) {
 
-    setTimeout(function(){
+    setTimeout( () => {
         currentLetter++;
-        var currentText = container.text.substr(0, currentLetter);
+        let currentText = container.text.substr(0, currentLetter);
         currentText += getRandomChars(container.text.length - currentLetter);
 
         container.element.innerHTML = currentText;
-        progress = currentLetter/container.text.length;
+        progress = currentLetter / container.text.length;
 
         if(progress < 1) {
           animate(container)
@@ -40,9 +40,9 @@ function animate(container) {
 }
 
 function getRandomChars(size) {
-    var result = '';
+    let result = '';
 
-    for(var i = 0; i < size; i++) {
+    for(let i = 0; i < size; i++) {
         if(i % 5 == 0) {
             result += ' '
         } else {
